@@ -9,7 +9,6 @@ dependencies {
     compile 'com.amazon.alexa:alexa-skills-kit:1.1.2'
     compile 'com.amazonaws:aws-lambda-java-core:1.0.0'
     compile 'com.amazonaws:aws-java-sdk-dynamodb:1.9.40'
-    compile 'com.fasterxml.jackson.core:jackson-databind:2.0.1'
     compile 'com.amazonaws:aws-lambda-java-log4j:1.0.0'
     compile 'log4j:log4j:1.2.17'
     compile 'org.apache.commons:commons-lang3:3.3.2'
@@ -29,4 +28,9 @@ task buildZip(type: Zip) {
     }
 }
 
+task deploy(type: Exec) {
+   commandLine 'aws', 's3', 'cp', 'build/distributions/hosthealth.zip', 's3://hosthealth-code-for-deployment/'
+}
+
 build.dependsOn buildZip
+deploy.dependsOn build
