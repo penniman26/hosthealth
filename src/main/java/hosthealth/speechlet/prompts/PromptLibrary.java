@@ -25,7 +25,8 @@ public enum PromptLibrary
     , HostDisassociated("Okay. Host successfully disassociated.")
     , ErrorCalculatingPercentDiskSpaceUsed("Please check the format of the used and existing disk space values passed in your host health report from your computer. " +
         "Visit p, e, n, n, y, s, y, d, n, e, y, dot, d, o, g, for help publishing your host health. Find this link in the host health skill's" +
-                " description section. ");
+                " description section. ")
+    , SpeakEachLetterAndDigitOfHostId("Ok, find your mac address or other alphanumeric host identification of length 12, and speak each letter and digit.");
     private final String prompt;
 
     PromptLibrary(String prompt)
