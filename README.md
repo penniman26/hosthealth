@@ -1,6 +1,6 @@
 # HostHealth stores your host health and presents it through an alexa skill
 
-Please feel free to contribute. Email me if you need help setting up your environment.
+Please contribute to the code if you'd like. Email me at admin@pennysydney.dog if you need help setting up your Amazon Web Services (AWS) account and development-only host health alexa skill. This really needs a windows client for posting host health data; at the moment it only works with Mac and Linux.
 
 ## How it works
 
