@@ -8,7 +8,7 @@ The user configures their computer to send your disk space and CPU load metrics 
 
 See https://github.com/penniman26/hosthealth/wiki/Publishing-your-host-health-to-the-alexa-host-health-skill for user setup instructions
 
-## What technoligies are used?
+## What technologies are used?
 
 The host makes an https post request with their host health to an AWS API Gateway endpoint (https://kwydc0d3o7.execute-api.us-east-1.amazonaws.com/prod) which routes that request to an AWS Lambda https://aws.amazon.com/lambda/ instance. See https://github.com/penniman26/hosthealth/tree/mainline/src/main/java/hosthealth/receivepublishedhealth for the code that is uploaded to the AWS Lambda instance. The code receives the request, validates the input, then saves the data to an AWS DynamoDB table.
 
