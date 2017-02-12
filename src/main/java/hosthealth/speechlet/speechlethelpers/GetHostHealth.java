@@ -114,7 +114,7 @@ public class GetHostHealth
         if (numberOfHostsSeenWithoutData == 0)
         {
             return "To disassociate a host ID from your account, ask host health to remove a host from your fleet. If this is a valid host ID, open your" +
-                    " web browser and visit p, e, n, n, y, s, y, d, n, e, y, dot, d, o, g, for the commands to run on your host to publish host health. ";
+                    " web browser and visit penny sydney dot dog, p, e, n, n, y, s, y, d, n, e, y, dot, d, o, g, for the commands to run on your host to publish host health. ";
         }
 
         return "";
